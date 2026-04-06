@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Drift & Discover</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div id="preloader">
+        <div class="loader-logo logo">DRIFT<span>&</span>DISCOVER</div>
+    </div>
+
+    <nav id="navbar" class="scrolled">
+        <div class="container">
+            <a href="index.html" class="logo">DRIFT<span>&</span>DISCOVER</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="group-trips.html">Group Trips</a></li>
+                <li><a href="about.html">Why Us</a></li>
+                <li><a href="contact.html" class="nav-active">Plan My Trip</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1 class="gradient-text reveal">Let's Plan Your Journey</h1>
+            <p class="reveal">Fill in the details and our travel experts will reach out to you.</p>
+        </div>
+    </header>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="form-container glass reveal">
+                <form id="leadForm">
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Phone Number</label>
+                        <input type="tel" id="phone" placeholder="Enter your mobile number" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Preferred Destination</label>
+                        <select id="destination">
+                            <option value="Manali">Manali</option>
+                            <option value="Goa">Goa</option>
+                            <option value="Dubai">Dubai</option>
+                            <option value="Bali">Bali</option>
+                            <option value="Thailand">Thailand</option>
+                            <option value="Others">Others</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Travel Date</label>
+                        <input type="date" id="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Number of Travelers</label>
+                        <input type="number" id="count" min="1" value="1" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%; border: none; font-size: 1.1rem;">👉 Get Free Quote</button>
+                    <div style="margin-top: 2rem; text-align: center;">
+                        <p style="margin-bottom: 1rem; color: var(--text-muted);">Prefer a detailed Google Form?</p>
+                        <a href="https://forms.gle/1miEZ4Qx2orwSfUx8" target="_blank" class="btn btn-outline" style="width: 100%;">👉 Fill Detailed Form</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info Cards -->
+    <section class="section-padding" style="background: var(--bg-dark);">
+        <div class="container reveal">
+            <div class="features-grid">
+                <div class="feature-card glass">
+                    <i class="fa-solid fa-envelope"></i>
+                    <h3>Email Support</h3>
+                    <p>drift.discover@zohomail.in</p>
+                </div>
+                <div class="feature-card glass">
+                    <i class="fa-solid fa-phone"></i>
+                    <h3>Call Us</h3>
+                    <p>+91 8699246801<br>+91 9149262139</p>
+                </div>
+                <div class="feature-card glass">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <h3>WhatsApp</h3>
+                    <p>Click the floating button for instant chat.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer style="padding: 4rem 0; background: var(--bg-darker); border-top: 1px solid var(--glass-border);">
+        <div class="container">
+            <p style="text-align: center; color: var(--text-muted); font-size: 0.9rem;">&copy; 2026 Drift & Discover. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

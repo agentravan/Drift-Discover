@@ -9,101 +9,95 @@
 </head>
 <body>
 
-    <div id="preloader">
-        <div class="loader-logo logo">DRIFT<span>&</span>DISCOVER</div>
-    </div>
-
-    <nav id="navbar" class="scrolled">
-        <div class="container">
-            <a href="index.html" class="logo">DRIFT<span>&</span>DISCOVER</a>
+    <!-- Nav Bar -->
+    <nav>
+        <div class="container flex justify-between items-center nav-main">
+            <a href="index.html" class="logo flex items-center gap-2">
+                <img src="logo.png" alt="Drift & Discover Logo" class="logo-img">
+            </a>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="destinations.html">Destinations</a></li>
                 <li><a href="group-trips.html">Group Trips</a></li>
-                <li><a href="about.html">Why Us</a></li>
-                <li><a href="contact.html" class="nav-active">Plan My Trip</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html" style="color: var(--primary); font-weight: 700;">Contact</a></li>
+                <li><a href="tel:+918699246801" class="btn btn-primary" style="padding: 0.6rem 1.2rem; font-size: 0.85rem;">Book Now</a></li>
             </ul>
         </div>
     </nav>
 
-    <header class="page-header">
+    <section style="background: var(--bg-soft); padding: 80px 0;">
         <div class="container">
-            <h1 class="gradient-text reveal">Let's Plan Your Journey</h1>
-            <p class="reveal">Fill in the details and our travel experts will reach out to you.</p>
+            <h1 style="font-size: 3rem; color: var(--primary);">Get in Touch</h1>
+            <p style="font-size: 1.2rem; max-width: 600px; color: var(--text-muted); margin-top: 1rem;">Have questions about our trips or looking for a customized tour? We're here to help you.</p>
         </div>
-    </header>
+    </section>
 
-    <section class="section-padding">
-        <div class="container">
-            <div class="form-container glass reveal">
-                <form id="leadForm">
-                    <div class="form-group">
-                        <label>Full Name</label>
-                        <input type="text" id="name" placeholder="Enter your name" required>
+    <section>
+        <div class="container grid" style="grid-template-columns: 1fr 1fr; gap: 5rem;">
+            <!-- Contact Info -->
+            <div>
+                <h2 style="margin-bottom: 2rem;">Contact Details</h2>
+                <div class="flex items-center gap-4" style="margin-bottom: 2rem;">
+                    <div style="background: var(--bg-soft); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; color: var(--primary);">
+                        <i class="fa-solid fa-phone" style="margin-top: 20px;"></i>
                     </div>
-                    <div class="form-group">
-                        <label>Phone Number</label>
-                        <input type="tel" id="phone" placeholder="Enter your mobile number" required>
+                    <div>
+                        <h4 style="margin-bottom: 0.3rem;">Call or WhatsApp</h4>
+                        <p style="color: var(--text-muted);">+91 86992 46801 | +91 91492 62139</p>
                     </div>
-                    <div class="form-group">
-                        <label>Preferred Destination</label>
-                        <select id="destination">
-                            <option value="Manali">Manali</option>
-                            <option value="Goa">Goa</option>
-                            <option value="Dubai">Dubai</option>
-                            <option value="Bali">Bali</option>
-                            <option value="Thailand">Thailand</option>
-                            <option value="Others">Others</option>
-                        </select>
+                </div>
+
+                <div class="flex items-center gap-4" style="margin-bottom: 2rem;">
+                    <div style="background: var(--bg-soft); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; color: var(--primary);">
+                        <i class="fa-solid fa-envelope" style="margin-top: 20px;"></i>
                     </div>
-                    <div class="form-group">
-                        <label>Travel Date</label>
-                        <input type="date" id="date" required>
+                    <div>
+                        <h4 style="margin-bottom: 0.3rem;">Email Us</h4>
+                        <p style="color: var(--text-muted);">drift.discover@zohomail.in</p>
                     </div>
-                    <div class="form-group">
-                        <label>Number of Travelers</label>
-                        <input type="number" id="count" min="1" value="1" required>
+                </div>
+
+                <div class="flex items-center gap-4">
+                    <div style="background: var(--bg-soft); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; color: var(--primary);">
+                        <i class="fa-solid fa-location-dot" style="margin-top: 20px;"></i>
                     </div>
-                    <button type="submit" class="btn btn-primary" style="width: 100%; border: none; font-size: 1.1rem;">👉 Get Free Quote</button>
-                    <div style="margin-top: 2rem; text-align: center;">
-                        <p style="margin-bottom: 1rem; color: var(--text-muted);">Prefer a detailed Google Form?</p>
-                        <a href="https://forms.gle/1miEZ4Qx2orwSfUx8" target="_blank" class="btn btn-outline" style="width: 100%;">👉 Fill Detailed Form</a>
+                    <div>
+                        <h4 style="margin-bottom: 0.3rem;">Office Address</h4>
+                        <p style="color: var(--text-muted);">Sector 62, Noida, Uttar Pradesh, India - 201309</p>
                     </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div style="background: white; padding: 3rem; border-radius: 20px; box-shadow: var(--shadow-lg);">
+                <h3 style="margin-bottom: 2rem;">Send us a message</h3>
+                <form>
+                    <div style="margin-bottom: 1.5rem;">
+                        <label style="display: block; font-weight: 600; margin-bottom: 0.5rem; color: var(--text-main);">Full Name</label>
+                        <input type="text" placeholder="Your Name" style="width: 100%; padding: 1rem; border-radius: 10px; border: 1px solid var(--border-color); font-family: inherit;">
+                    </div>
+                    <div style="margin-bottom: 1.5rem;">
+                        <label style="display: block; font-weight: 600; margin-bottom: 0.5rem; color: var(--text-main);">Mobile Number</label>
+                        <input type="tel" placeholder="+91 00000 00000" style="width: 100%; padding: 1rem; border-radius: 10px; border: 1px solid var(--border-color); font-family: inherit;">
+                    </div>
+                    <div style="margin-bottom: 2rem;">
+                        <label style="display: block; font-weight: 600; margin-bottom: 0.5rem; color: var(--text-main);">Your Message (Optional)</label>
+                        <textarea placeholder="Tell us which trip you are interested in..." style="width: 100%; padding: 1rem; border-radius: 10px; border: 1px solid var(--border-color); font-family: inherit; height: 120px;"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1.2rem;">Send Message</button>
+                    <p style="text-align: center; font-size: 0.85rem; color: var(--text-muted); margin-top: 1.5rem;">We usually reply within 2-4 business hours.</p>
                 </form>
             </div>
         </div>
     </section>
 
-    <!-- Contact Info Cards -->
-    <section class="section-padding" style="background: var(--bg-dark);">
-        <div class="container reveal">
-            <div class="features-grid">
-                <div class="feature-card glass">
-                    <i class="fa-solid fa-envelope"></i>
-                    <h3>Email Support</h3>
-                    <p>drift.discover@zohomail.in</p>
-                </div>
-                <div class="feature-card glass">
-                    <i class="fa-solid fa-phone"></i>
-                    <h3>Call Us</h3>
-                    <p>+91 8699246801<br>+91 9149262139</p>
-                </div>
-                <div class="feature-card glass">
-                    <i class="fa-brands fa-whatsapp"></i>
-                    <h3>WhatsApp</h3>
-                    <p>Click the floating button for instant chat.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer style="padding: 4rem 0; background: var(--bg-darker); border-top: 1px solid var(--glass-border);">
-        <div class="container">
-            <p style="text-align: center; color: var(--text-muted); font-size: 0.9rem;">&copy; 2026 Drift & Discover. All rights reserved.</p>
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Drift & Discover. All Rights Reserved.</p>
         </div>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

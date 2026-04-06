@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Drift & Discover | Affordable Group Adventures from Delhi NCR</title>
+    <title>Drift & Discover | Premium Group Adventures from Delhi NCR</title>
     <meta name="description" content="Experience premium yet affordable group trips, corporate tours, and weekend getaways from Delhi NCR. Book your next adventure with Drift & Discover.">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -12,215 +12,215 @@
 </head>
 <body>
 
-    <div id="preloader">
-        <div class="loader-logo logo">
-            <span class="drift">Drift</span><span class="amp">&</span><span class="discover">Discover</span>
+    <!-- Top Bar -->
+    <div class="nav-top">
+        <div class="container flex justify-between items-center" style="font-size: 0.85rem; color: var(--text-muted);">
+            <div><i class="fa-solid fa-phone"></i> +91 86992 46801 | +91 91492 62139</div>
+            <div><i class="fa-solid fa-envelope"></i> drift.discover@zohomail.in</div>
         </div>
     </div>
 
-    <!-- Sticky Navbar -->
-    <nav id="navbar">
-        <div class="container">
-            <a href="index.html" class="logo">
-                <span class="drift">Drift</span><span class="amp">&</span><span class="discover">Discover</span>
+    <!-- Main Navbar -->
+    <nav>
+        <div class="container flex justify-between items-center nav-main">
+            <a href="index.html" class="logo flex items-center gap-2">
+                <img src="logo.png" alt="Drift & Discover Logo" class="logo-img">
             </a>
             <ul class="nav-links">
-                <li><a href="index.html" class="nav-active">Home</a></li>
-                <li><a href="group-trips.html">Upcoming Trips</a></li>
-                <li><a href="about.html">Why Us</a></li>
+                <li><a href="index.html" style="color: var(--primary); font-weight: 700;">Home</a></li>
+                <li><a href="group-trips.html">Group Trips</a></li>
+                <li><a href="about.html">About Us</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a href="tel:+918699246801" class="btn btn-primary" style="padding: 0.6rem 1.2rem; font-size: 0.85rem;">Book Now</a></li>
             </ul>
+        </div>
+        <div class="category-bar">
+            <div class="container">
+                <ul class="category-links">
+                    <li><a href="group-trips.html?cat=upcoming">Upcoming Trips</a></li>
+                    <li><a href="group-trips.html?cat=himachal">Himachal Packages</a></li>
+                    <li><a href="group-trips.html?cat=uttarakhand">Uttarakhand Trips</a></li>
+                    <li><a href="group-trips.html?cat=weekend">Weekend Getaways</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="hero">
-        <img src="images/hero_bg.png" alt="Group Travel Mountains" class="hero-video-bg">
+    <section class="hero">
         <div class="hero-overlay"></div>
-        
-        <div class="clouds" id="cloud-container"></div>
-        <div class="airplane"><i class="fa-solid fa-plane-up"></i></div>
-
-        <div class="hero-content container">
-            <h1 class="gradient-text">Travel Together,<br>Experience More</h1>
-            <p>Affordable Group Adventures from Delhi NCR | Starting at ₹6,999</p>
-            <div class="hero-btns">
-                <a href="#upcoming" class="btn btn-primary">Explore Trips</a>
-                <a href="group-trips.html" class="btn btn-outline">Weekend Batches</a>
+        <div class="container hero-content">
+            <h1>Adventure Awaits You</h1>
+            <p style="font-size: 1.2rem; margin-bottom: 2rem;">Premium Group Adventures from Delhi NCR | Starting at ₹6,999</p>
+            <div class="search-box">
+                <i class="fa-solid fa-location-dot" style="margin-left: 1rem; color: var(--primary);"></i>
+                <input type="text" placeholder="Where do you want to go? (Manali, Kasol, Jibhi...)">
+                <button class="btn btn-primary" style="border-radius: 50px; padding: 1rem 2.5rem;">Search Trips</button>
             </div>
         </div>
     </section>
 
-    <!-- Countdown Urgency -->
-    <div class="info-banner" style="background: linear-gradient(90deg, var(--bg-darker), var(--primary));">
-        <span>⏰ Next Batch Departs In: </span>
-        <span id="countdown" style="font-weight: 800; color: var(--accent); margin-left: 10px;">02d 14h 35m 10s</span>
-    </div>
+    <!-- Featured Categories / Badges -->
+    <section style="padding: 40px 0; background: var(--bg-soft);">
+        <div class="container flex justify-between items-center gap-4" style="flex-wrap: wrap;">
+            <div class="flex items-center gap-2" style="font-weight: 700;"><i class="fa-solid fa-shield-halved" style="color: var(--primary); font-size: 1.5rem;"></i> Safe & Secure Travel</div>
+            <div class="flex items-center gap-2" style="font-weight: 700;"><i class="fa-solid fa-users" style="color: var(--primary); font-size: 1.5rem;"></i> Verified Group Leaders</div>
+            <div class="flex items-center gap-2" style="font-weight: 700;"><i class="fa-solid fa-indian-rupee-sign" style="color: var(--primary); font-size: 1.5rem;"></i> Transparency in Pricing</div>
+            <div class="flex items-center gap-2" style="font-weight: 700;"><i class="fa-solid fa-thumbs-up" style="color: var(--primary); font-size: 1.5rem;"></i> Premium Stays</div>
+        </div>
+    </section>
 
-    <!-- Upcoming Trips Section (The MONEY Section) -->
-    <section id="upcoming" class="section-padding">
+    <!-- Upcoming Trips -->
+    <section>
         <div class="container">
-            <div class="section-title reveal">
-                <h2>Upcoming April Special Trips</h2>
-                <p>Limited seats left for the next weekend departures!</p>
+            <div class="flex justify-between items-center" style="margin-bottom: 3rem;">
+                <div>
+                    <h2 style="font-size: 2.2rem; color: var(--primary);">Upcoming Group Trips</h2>
+                    <p style="color: var(--text-muted);">Handpicked adventures for your next weekend</p>
+                </div>
+                <a href="group-trips.html" class="btn btn-outline">View All Trips</a>
             </div>
-            
-            <div class="dest-grid">
-                <!-- Manali -->
-                <div class="dest-card reveal">
-                    <span class="card-badge badge-trending">Best Seller</span>
-                    <img src="images/manali.png" alt="Manali">
-                    <div class="dest-info">
-                        <div class="card-meta">
-                            <div class="meta-left">
-                                <span><i class="fa-solid fa-clock"></i> 3D/2N</span>
-                                <span><i class="fa-solid fa-location-dot"></i> Delhi</span>
-                            </div>
-                            <div class="meta-right">
-                                <span class="seats">Only 5 Seats Left!</span>
-                            </div>
-                        </div>
-                        <span class="price">₹6,999</span>
-                        <h3>Manali - Magical Himachal</h3>
-                        
-                        <div class="card-dates">
-                            <div class="date-btn active">12 Apr</div>
-                            <div class="date-btn">19 Apr</div>
-                            <div class="date-btn">26 Apr</div>
-                        </div>
 
-                        <a href="trip-detail.html?trip=manali" class="btn btn-outline" style="width: 100%; text-align: center;">View Details</a>
+            <div class="trip-grid">
+                <!-- Manali -->
+                <div class="trip-card">
+                    <div class="card-img-wrapper">
+                        <span class="card-badge">Best Seller</span>
+                        <img src="images/manali.png" alt="Manali">
+                        <div class="price-badge">₹6,999 onwards</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="trip-meta">
+                            <span><i class="fa-solid fa-clock"></i> 3D/2N</span>
+                            <span><i class="fa-solid fa-location-dot"></i> Delhi to Delhi</span>
+                        </div>
+                        <h3 class="trip-title">Manali - Magical Himachal Group Trip</h3>
+                        <div class="flex justify-between items-center">
+                            <span style="color: var(--secondary); font-weight: 800; font-size: 0.8rem;">12 Apr, 19 Apr, 26 Apr</span>
+                            <a href="trip-detail.html?trip=manali" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.8rem;">Trip Details</a>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Kasol -->
-                <div class="dest-card reveal">
-                    <span class="card-badge badge-selling">Fast Filling</span>
-                    <img src="images/group.png" alt="Kasol">
-                    <div class="dest-info">
-                        <div class="card-meta">
-                            <div class="meta-left">
-                                <span><i class="fa-solid fa-clock"></i> 3D/2N</span>
-                                <span><i class="fa-solid fa-location-dot"></i> Delhi</span>
-                            </div>
-                            <div class="meta-right">
-                                <span class="seats">Only 3 Seats Left!</span>
-                            </div>
+                <div class="trip-card">
+                    <div class="card-img-wrapper">
+                        <span class="card-badge">Fast Filling</span>
+                        <img src="images/group.png" alt="Kasol">
+                        <div class="price-badge">₹6,999 onwards</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="trip-meta">
+                            <span><i class="fa-solid fa-clock"></i> 3D/2N</span>
+                            <span><i class="fa-solid fa-location-dot"></i> Delhi to Delhi</span>
                         </div>
-                        <span class="price">₹6,999</span>
-                        <h3>Kasol - Parvati Valley Magic</h3>
-
-                        <div class="card-dates">
-                            <div class="date-btn active">12 Apr</div>
-                            <div class="date-btn">26 Apr</div>
+                        <h3 class="trip-title">Kasol - Parvati Valley Magic</h3>
+                        <div class="flex justify-between items-center">
+                            <span style="color: var(--secondary); font-weight: 800; font-size: 0.8rem;">12 Apr, 26 Apr</span>
+                            <a href="trip-detail.html?trip=kasol" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.8rem;">Trip Details</a>
                         </div>
-
-                        <a href="trip-detail.html?trip=kasol" class="btn btn-outline" style="width: 100%; text-align: center;">View Details</a>
                     </div>
                 </div>
 
                 <!-- Jibhi -->
-                <div class="dest-card reveal">
-                    <span class="card-badge badge-best">Trending</span>
-                    <img src="images/hero_bg.png" alt="Jibhi">
-                    <div class="dest-info">
-                        <div class="card-meta">
-                            <div class="meta-left">
-                                <span><i class="fa-solid fa-clock"></i> 3D/2N</span>
-                                <span><i class="fa-solid fa-location-dot"></i> Delhi</span>
-                            </div>
-                            <div class="meta-right">
-                                <span class="seats">Selling Fast!</span>
-                            </div>
+                <div class="trip-card">
+                    <div class="card-img-wrapper">
+                        <span class="card-badge" style="background: var(--secondary); color: white;">Trending</span>
+                        <img src="images/hero_bg.png" alt="Jibhi">
+                        <div class="price-badge">₹6,999 onwards</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="trip-meta">
+                            <span><i class="fa-solid fa-clock"></i> 3D/2N</span>
+                            <span><i class="fa-solid fa-location-dot"></i> Delhi to Delhi</span>
                         </div>
-                        <span class="price">₹6,999</span>
-                        <h3>Jibhi - The Hidden Paradise</h3>
-
-                        <div class="card-dates">
-                            <div class="date-btn active">19 Apr</div>
-                            <div class="date-btn">03 May</div>
+                        <h3 class="trip-title">Jibhi - The Hidden Paradise</h3>
+                        <div class="flex justify-between items-center">
+                            <span style="color: var(--secondary); font-weight: 800; font-size: 0.8rem;">19 Apr, 03 May</span>
+                            <a href="trip-detail.html?trip=jibhi" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.8rem;">Trip Details</a>
                         </div>
-
-                        <a href="trip-detail.html?trip=jibhi" class="btn btn-outline" style="width: 100%; text-align: center;">View Details</a>
                     </div>
                 </div>
-            </div>
-            
-            <div style="text-align: center; margin-top: 4rem;">
-                <a href="group-trips.html" class="btn btn-primary">View All Upcoming Batches</a>
             </div>
         </div>
     </section>
 
-    <!-- USP Section -->
-    <section class="section-padding" style="background: var(--bg-dark);">
+    <!-- Why Us Section -->
+    <section style="background: var(--bg-soft);">
         <div class="container">
-            <div class="section-title reveal">
-                <h2>Our Unique Difference</h2>
-                <p>Why choose Drift & Discover for your weekend adventures?</p>
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <h2 style="font-size: 2.2rem; color: var(--primary);">Why Drift & Discover?</h2>
+                <p style="color: var(--text-muted); max-width: 600px; margin: 1rem auto;">We don't just organize trips; we create memories with a community of like-minded travelers.</p>
             </div>
-            <div class="features-grid">
-                <div class="feature-card glass reveal">
-                    <i class="fa-solid fa-indian-rupee-sign"></i>
-                    <h3>Affordable Pricing</h3>
-                    <p>Premium experience at a price that won't break the bank. Fixed ₹6,999 packages.</p>
+            <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 3rem;">
+                <div style="text-align: center; padding: 2rem; background: white; border-radius: 15px; box-shadow: var(--shadow-sm);">
+                    <i class="fa-solid fa-hotel" style="font-size: 3rem; color: var(--primary); margin-bottom: 1.5rem;"></i>
+                    <h3>Premium Stays</h3>
+                    <p style="color: var(--text-muted); margin-top: 1rem;">Handpicked hotels and campsites with the best views and comfort.</p>
                 </div>
-                <div class="feature-card glass reveal">
-                    <i class="fa-solid fa-calendar-days"></i>
-                    <h3>Fixed Weekend Batches</h3>
-                    <p>Every 2nd & 4th Saturday departures. Friday evening to Sunday return.</p>
+                <div style="text-align: center; padding: 2rem; background: white; border-radius: 15px; box-shadow: var(--shadow-sm);">
+                    <i class="fa-solid fa-bus" style="font-size: 3rem; color: var(--primary); margin-bottom: 1.5rem;"></i>
+                    <h3>Comfy Transport</h3>
+                    <p style="color: var(--text-muted); margin-top: 1rem;">AC Pushback Tempo Travelers from Delhi for a smooth journey.</p>
                 </div>
-                <div class="feature-card glass reveal">
-                    <i class="fa-solid fa-map-pin"></i>
-                    <h3>Delhi NCR Focus</h3>
-                    <p>Convenient pickups across Delhi NCR (Kashmiri Gate, Majnu Ka Tilla, Noida).</p>
+                <div style="text-align: center; padding: 2rem; background: white; border-radius: 15px; box-shadow: var(--shadow-sm);">
+                    <i class="fa-solid fa-camera-retro" style="font-size: 3rem; color: var(--primary); margin-bottom: 1.5rem;"></i>
+                    <h3>Expert Photographers</h3>
+                    <p style="color: var(--text-muted); margin-top: 1rem;">Our group leaders are pros at capturing your best moments.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer style="padding: 5rem 0; background: var(--bg-darker); border-top: 1px solid var(--glass-border);">
-        <div class="container" style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 4rem;">
+    <footer>
+        <div class="container footer-grid">
             <div>
-                <a href="index.html" class="logo">
-                    <span class="drift">Drift</span><span class="amp">&</span><span class="discover">Discover</span>
-                </a>
-                <p style="color: var(--text-muted); margin-top: 1.5rem; max-width: 350px;">Weekend Trips • Group Adventures • Memories For Life. Affordable adventures from Delhi NCR.</p>
-            </div>
-            <div>
-                <h4 style="margin-bottom: 2rem;">Quick Links</h4>
-                <div style="display: flex; flex-direction: column; gap: 1rem;">
-                    <a href="group-trips.html" style="color: var(--text-muted); text-decoration: none;">Upcoming Trips</a>
-                    <a href="about.html" style="color: var(--text-muted); text-decoration: none;">About Us</a>
-                    <a href="contact.html" style="color: var(--text-muted); text-decoration: none;">Contact Support</a>
+                <img src="drift_and_discover_logo_1775490254916.png" alt="Logo" style="height: 50px; margin-bottom: 1.5rem;">
+                <p style="color: var(--text-muted);">Making group travel easy, affordable, and premium for everyone starting from Delhi NCR.</p>
+                <div class="flex gap-2" style="margin-top: 1.5rem;">
+                    <a href="#" style="color: var(--primary); font-size: 1.5rem;"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" style="color: var(--primary); font-size: 1.5rem;"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" style="color: var(--primary); font-size: 1.5rem;"><i class="fa-brands fa-youtube"></i></a>
                 </div>
             </div>
             <div>
-                <h4 style="margin-bottom: 2rem;">Contact Details</h4>
-                <p style="color: var(--text-muted); margin-bottom: 1rem;"><i class="fa-solid fa-envelope"></i> drift.discover@zohomail.in</p>
-                <div style="display: flex; gap: 1rem; margin-top: 1rem;">
-                    <a href="https://wa.me/918699246801" class="float-btn fb-whatsapp" style="width: 40px; height: 40px; font-size: 1rem;"><i class="fa-brands fa-whatsapp"></i></a>
-                    <a href="https://wa.me/919149262139" class="float-btn fb-whatsapp" style="width: 40px; height: 40px; font-size: 1rem;"><i class="fa-brands fa-whatsapp"></i></a>
-                </div>
+                <h4 class="footer-title">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="group-trips.html">Upcoming Trips</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
             </div>
+            <div>
+                <h4 class="footer-title">Trip Categories</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Himachal Specials</a></li>
+                    <li><a href="#">Uttarakhand Gems</a></li>
+                    <li><a href="#">Rajasthan Royal</a></li>
+                    <li><a href="#">International Tours</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-title">Contact Us</h4>
+                <ul class="footer-links" style="color: var(--text-muted);">
+                    <li><i class="fa-solid fa-phone" style="margin-right: 10px; color: var(--primary);"></i> +91 86992 46801</li>
+                    <li><i class="fa-solid fa-phone" style="margin-right: 10px; color: var(--primary);"></i> +91 91492 62139</li>
+                    <li><i class="fa-solid fa-envelope" style="margin-right: 10px; color: var(--primary);"></i> drift.discover@zohomail.in</li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Drift & Discover. All Rights Reserved. Designed with <i class="fa-solid fa-heart" style="color: var(--secondary);"></i> for Travelers.</p>
         </div>
     </footer>
 
-    <!-- Floating Actions -->
-    <div class="floating-actions">
-        <div class="whatsapp-menu glass" id="waMenu">
-            <a href="https://wa.me/918699246801?text=Hi, I want to book a trip" target="_blank" class="whatsapp-item">
-                <i class="fa-brands fa-whatsapp"></i> Support 1
-            </a>
-            <a href="https://wa.me/919149262139?text=Hi, I want to book a trip" target="_blank" class="whatsapp-item">
-                <i class="fa-brands fa-whatsapp"></i> Support 2
-            </a>
-        </div>
-        <div class="float-btn fb-whatsapp" id="waBtn"><i class="fa-brands fa-whatsapp"></i></div>
-    </div>
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/918699246801" target="_blank" style="position: fixed; bottom: 30px; right: 30px; background: #25D366; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2rem; box-shadow: var(--shadow-lg); z-index: 1000; text-decoration: none;">
+        <i class="fa-brands fa-whatsapp" style="margin-top: 14px; margin-left: 14px;"></i>
+    </a>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

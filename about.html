@@ -3,166 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Mission & Story | Drift & Discover</title>
+    <title>About Us | Drift & Discover</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
 
-    <div id="preloader">
-        <div class="loader-logo logo">DRIFT<span>&</span>DISCOVER</div>
-    </div>
-
-    <nav id="navbar" class="scrolled">
-        <div class="container">
-            <a href="index.html" class="logo">DRIFT<span>&</span>DISCOVER</a>
+    <!-- Nav Bar -->
+    <nav>
+        <div class="container flex justify-between items-center nav-main">
+            <a href="index.html" class="logo flex items-center gap-2">
+                <img src="logo.png" alt="Drift & Discover Logo" class="logo-img">
+            </a>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="destinations.html">Destinations</a></li>
                 <li><a href="group-trips.html">Group Trips</a></li>
-                <li><a href="about.html" class="nav-active">Why Us</a></li>
-                <li><a href="contact.html">Plan My Trip</a></li>
+                <li><a href="about.html" style="color: var(--primary); font-weight: 700;">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="tel:+918699246801" class="btn btn-primary" style="padding: 0.6rem 1.2rem; font-size: 0.85rem;">Book Now</a></li>
             </ul>
         </div>
     </nav>
 
-    <header class="page-header">
+    <section style="background: var(--bg-soft); padding: 80px 0;">
         <div class="container">
-            <h1 class="gradient-text reveal">The Drift & Discover Story</h1>
-            <p class="reveal">Founded on the principle of community travel. We aren't just a travel agency; we are a community of explorers!</p>
-        </div>
-    </header>
-
-    <!-- Mission & Values -->
-    <section class="section-padding">
-        <div class="container">
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 4rem; align-items: center;">
-                <div class="reveal-left">
-                    <h2 class="gradient-text">Our Deep-Rooted Mission</h2>
-                    <p style="color: var(--text-muted); margin-bottom: 2rem;">Our mission is to make premium, luxury-feel travel accessible to every young Indian. We focus on building meaningful connections through group departures while maintaining the highest standards of safety, comfort, and authenticity.</p>
-                    <p style="color: var(--text-muted); margin-bottom: 2rem;">From the winding roads of Manali to the white-sand beaches of Bali, we curate every detail so you can just focus on the 'Drift' and the 'Discovery'.</p>
-                    <div style="display: flex; gap: 2.5rem; flex-wrap: wrap;">
-                        <div>
-                            <h2 style="color: var(--primary);">2024</h2>
-                            <p style="font-size: 0.85rem; color: var(--text-muted);">Year Founded</p>
-                        </div>
-                        <div>
-                            <h2 style="color: var(--secondary);">100+</h2>
-                            <p style="font-size: 0.85rem; color: var(--text-muted);">Guided Trips</p>
-                        </div>
-                        <div>
-                            <h2 style="color: var(--accent);">Delhi</h2>
-                            <p style="font-size: 0.85rem; color: var(--text-muted);">Headquarters</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="glass reveal-right" style="padding: 4rem;">
-                    <h3 style="margin-bottom: 2rem;">Core Driving Values</h3>
-                    <ul style="list-style: none; display: flex; flex-direction: column; gap: 1.5rem;">
-                        <li style="display: flex; gap: 1.5rem; align-items: flex-start;">
-                            <i class="fa-solid fa-heart" style="color: var(--accent); margin-top: 0.3rem;"></i>
-                            <div>
-                                <strong>Safety First</strong>
-                                <p style="font-size: 0.85rem; color: var(--text-muted);">Your well-being is non-negotiable in every journey we plan.</p>
-                            </div>
-                        </li>
-                        <li style="display: flex; gap: 1.5rem; align-items: flex-start;">
-                            <i class="fa-solid fa-earth-asia" style="color: var(--primary); margin-top: 0.3rem;"></i>
-                            <div>
-                                <strong>Authenticity</strong>
-                                <p style="font-size: 0.85rem; color: var(--text-muted);">We uncover the hidden gems, not just the crowded spots.</p>
-                            </div>
-                        </li>
-                        <li style="display: flex; gap: 1.5rem; align-items: flex-start;">
-                            <i class="fa-solid fa-user-group" style="color: var(--secondary); margin-top: 0.3rem;"></i>
-                            <div>
-                                <strong>Community Spirit</strong>
-                                <p style="font-size: 0.85rem; color: var(--text-muted);">Strangers become friends in our groups before the second sunrise.</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+            <h1 style="font-size: 3rem; color: var(--primary); margin-bottom: 2rem;">Why Drift & Discover?</h1>
+            <p style="font-size: 1.2rem; max-width: 800px; color: var(--text-muted); line-height: 1.8;">
+                Born from a passion for the mountains and a desire for community, Drift & Discover is more than just a travel company. We are a community of dreamers, adventurers, and storytellers. Based in Delhi NCR, we specialize in high-quality group departures that balance adventure with comfort.
+            </p>
         </div>
     </section>
 
-    <!-- Meet the Crew (Captains) Section -->
-    <section class="section-padding" style="background: var(--bg-dark);">
-        <div class="container">
-            <div class="section-title reveal">
-                <h2>Our Experienced Trip Captains</h2>
-                <p>The masters of the road who guide you to discovery.</p>
-            </div>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem;">
-                <div class="feature-card glass reveal" style="padding: 2.5rem;">
-                    <i class="fa-solid fa-person-hiking" style="font-size: 2.5rem; margin-bottom: 1.5rem;"></i>
-                    <h3>Captain Arnav</h3>
-                    <p style="font-size: 0.85rem; color: var(--text-muted);">The Expert of Spiti & Manali route. 5+ years on the road.</p>
-                </div>
-                <div class="feature-card glass reveal" style="padding: 2.5rem;">
-                    <i class="fa-solid fa-person-rays" style="font-size: 2.5rem; margin-bottom: 1.5rem;"></i>
-                    <h3>Captain Rhea</h3>
-                    <p style="font-size: 0.85rem; color: var(--text-muted);">Coastal specialist and your go-to for Bali & Goa.</p>
-                </div>
-                <div class="feature-card glass reveal" style="padding: 2.5rem;">
-                    <i class="fa-solid fa-route" style="font-size: 2.5rem; margin-bottom: 1.5rem;"></i>
-                    <h3>Captain Sameer</h3>
-                    <p style="font-size: 0.85rem; color: var(--text-muted);">The logistics pro and desert safari aficionado.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Slider Refresh -->
-    <section class="section-padding" style="background: var(--bg-darker);">
-        <div class="container">
-            <div class="section-title reveal">
-                <h2>Happy Drift & Discover Explorers</h2>
-            </div>
-            <div class="testimonials-slider glass reveal">
-                <div class="testimonial-track" id="testimonialTrack">
-                    <div class="testimonial-slide">
-                        <div style="font-size: 1rem; color: var(--warning); margin-bottom: 1rem;">⭐⭐⭐⭐⭐</div>
-                        <p style="font-size: 1.25rem;">"The collective vibe of the group was incredible! We started as strangers and ended with a bonfire in Jibhi. Best decision ever."</p>
-                        <strong style="display: block; margin-top: 1rem; color: var(--text-muted);">— Rohan, New Delhi</strong>
-                    </div>
-                    <div class="testimonial-slide">
-                        <div style="font-size: 1rem; color: var(--warning); margin-bottom: 1rem;">⭐⭐⭐⭐⭐</div>
-                        <p style="font-size: 1.25rem;">"Perfectly managed corporate retreat for our team! Drift & Discover made my work as HR so much easier. Luxury throughout."</p>
-                        <strong style="display: block; margin-top: 1rem; color: var(--text-muted);">— Sneha, Gurugram</strong>
-                    </div>
-                    <div class="testimonial-slide">
-                        <div style="font-size: 1rem; color: var(--warning); margin-bottom: 1rem;">⭐⭐⭐⭐⭐</div>
-                        <p style="font-size: 1.25rem;">"Found myself on a solo trip to Spiti! Safe, adventurous and incredibly well-crafted. Captain Arnav was a legend."</p>
-                        <strong style="display: block; margin-top: 1rem; color: var(--text-muted);">— Aryan, Noida</strong>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Final Footer Section -->
-    <footer style="padding: 4rem 0; background: var(--bg-darker); border-top: 1px solid var(--glass-border);">
-        <div class="container" style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 2rem;">
+    <section>
+        <div class="container grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 4rem;">
             <div>
-                <a href="index.html" class="logo">DRIFT<span>&</span>DISCOVER</a>
-                <p style="color: var(--text-muted); margin-top: 0.8rem;">Travel. Trust. Transformation.</p>
+                <h2 style="color: var(--primary); margin-bottom: 1.5rem;">Our Mission</h2>
+                <p style="color: var(--text-muted);">To make premium group travel accessible and safe for everyone, fostering new friendships and unforgettable memories across the Himalayan landscape.</p>
             </div>
             <div>
-                <div style="display: flex; flex-direction: column; gap: 0.8rem;">
-                    <a href="index.html" style="color: var(--text-muted); text-decoration: none;">Home Overview</a>
-                    <a href="group-trips.html" style="color: var(--text-muted); text-decoration: none;">Weekend Packages</a>
-                    <a href="contact.html" style="color: var(--text-muted); text-decoration: none;">Support Request</a>
-                </div>
+                <h2 style="color: var(--primary); margin-bottom: 1.5rem;">Our Community</h2>
+                <p style="color: var(--text-muted);">From solo travelers to corporate groups, we bring together diverse individuals who share a common love for exploration and respect for nature.</p>
             </div>
         </div>
-        <p style="text-align: center; margin-top: 4rem; color: var(--text-muted); font-size: 0.9rem;">&copy; 2026 Drift & Discover. Join the Ultimate Tribe.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Drift & Discover. All Rights Reserved.</p>
+        </div>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

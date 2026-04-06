@@ -3,169 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Travel Destinations | Drift & Discover</title>
+    <title>Destinations | Drift & Discover</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
 
-    <div id="preloader">
-        <div class="loader-logo logo">DRIFT<span>&</span>DISCOVER</div>
-    </div>
-
-    <nav id="navbar" class="scrolled">
-        <div class="container">
-            <a href="index.html" class="logo">DRIFT<span>&</span>DISCOVER</a>
+    <!-- Nav Bar -->
+    <nav>
+        <div class="container flex justify-between items-center nav-main">
+            <a href="index.html" class="logo flex items-center gap-2">
+                <img src="logo.png" alt="Drift & Discover Logo" class="logo-img">
+            </a>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="destinations.html" class="nav-active">Destinations</a></li>
                 <li><a href="group-trips.html">Group Trips</a></li>
-                <li><a href="about.html">Why Us</a></li>
-                <li><a href="contact.html">Plan My Trip</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="tel:+918699246801" class="btn btn-primary" style="padding: 0.6rem 1.2rem; font-size: 0.85rem;">Book Now</a></li>
             </ul>
         </div>
     </nav>
 
-    <header class="page-header">
+    <section style="background: var(--bg-soft); padding: 60px 0;">
         <div class="container">
-            <h1 class="gradient-text reveal">Curated Destinations</h1>
-            <p class="reveal">Explore handpicked journeys spanning from pristine beaches to majestic mountains across the globe.</p>
+            <h1 style="font-size: 2.5rem; color: var(--primary);">Popular Destinations</h1>
+            <p style="color: var(--text-muted);">Discover the magic of the Himalayas and beyond.</p>
         </div>
-    </header>
+    </section>
 
-    <section class="section-padding">
-        <div class="container">
-            <div class="dest-grid">
-                <!-- Goa -->
-                <div class="dest-card reveal">
-                    <span class="card-badge badge-trending">Hot</span>
-                    <img src="images/goa.png" alt="Goa">
-                    <div class="dest-info">
-                        <div class="card-meta">
-                            <span><i class="fa-solid fa-umbrella-beach"></i> Beaches</span>
-                            <span><i class="fa-solid fa-star"></i> 4.9/5</span>
-                        </div>
-                        <h3>Goa Escape</h3>
-                        <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">Experience the coastal magic with luxury stays, night parties, and private yacht experiences.</p>
-                        <a href="contact.html" class="btn btn-outline" style="padding: 0.8rem 1.5rem; font-size: 0.85rem;">Plan My Goa Trip</a>
-                    </div>
-                </div>
-
-                <!-- Manali -->
-                <div class="dest-card reveal">
-                    <span class="card-badge badge-best">Classic</span>
-                    <img src="images/manali.png" alt="Manali">
-                    <div class="dest-info">
-                        <div class="card-meta">
-                            <span><i class="fa-solid fa-mountain-sun"></i> Mountains</span>
-                            <span><i class="fa-solid fa-star"></i> 4.8/5</span>
-                        </div>
-                        <h3>Manali Heights</h3>
-                        <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">From Solang Valley thrills to old Manali cafe vibes. Our most loved mountain departure.</p>
-                        <a href="group-trips.html" class="btn btn-outline" style="padding: 0.8rem 1.5rem; font-size: 0.85rem;">View Group Departure</a>
-                    </div>
-                </div>
-
-                <!-- Dubai -->
-                <div class="dest-card reveal">
-                    <span class="card-badge badge-selling">Exclusive</span>
-                    <img src="images/dubai.png" alt="Dubai">
-                    <div class="dest-info">
-                        <div class="card-meta">
-                            <span><i class="fa-solid fa-city"></i> Luxury</span>
-                            <span><i class="fa-solid fa-star"></i> 5.0/5</span>
-                        </div>
-                        <h3>Dubai Skyline</h3>
-                        <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">Burj Khalifa, Desert Safari and Luxury Shopping. A global experience like none other.</p>
-                        <a href="contact.html" class="btn btn-outline" style="padding: 0.8rem 1.5rem; font-size: 0.85rem;">Get Custom Quote</a>
-                    </div>
-                </div>
-
-                <!-- Bali -->
-                <div class="dest-card reveal">
-                    <span class="card-badge badge-trending">Romantic</span>
-                    <img src="images/bali.png" alt="Bali">
-                    <div class="dest-info">
-                        <div class="card-meta">
-                            <span><i class="fa-solid fa-leaf"></i> Tropical</span>
-                            <span><i class="fa-solid fa-star"></i> 4.9/5</span>
-                        </div>
-                        <h3>Bali Serenity</h3>
-                        <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">Ubud swings, Nusa Penida cliffs, and spiritual retreats. Dive into Balinese culture.</p>
-                        <a href="contact.html" class="btn btn-outline" style="padding: 0.8rem 1.5rem; font-size: 0.85rem;">Explore Bali Packages</a>
-                    </div>
-                </div>
-
-                <!-- Thailand -->
-                <div class="dest-card reveal">
-                    <img src="images/thailand.png" alt="Thailand">
-                    <div class="dest-info">
-                        <div class="card-meta">
-                            <span><i class="fa-solid fa-water"></i> Islands</span>
-                            <span><i class="fa-solid fa-star"></i> 4.7/5</span>
-                        </div>
-                        <h3>Thailand Islands</h3>
-                        <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">Phi Phi, Krabi and Phuket. The ultimate island hopping adventure for young travelers.</p>
-                        <a href="contact.html" class="btn btn-outline" style="padding: 0.8rem 1.5rem; font-size: 0.85rem;">View Thailand Deals</a>
-                    </div>
-                </div>
-
-                <!-- Custom -->
-                <div class="dest-card reveal">
-                    <img src="images/group.png" alt="Custom">
-                    <div class="dest-info">
-                        <div class="card-meta">
-                            <span><i class="fa-solid fa-wand-magic-sparkles"></i> Personalized</span>
-                        </div>
-                        <h3>Build Your Own Journey</h3>
-                        <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">Don't see your destination? Tell us where you want to drift, and we'll discover it for you.</p>
-                        <a href="contact.html" class="btn btn-outline" style="padding: 0.8rem 1.5rem; font-size: 0.85rem;">Custom Itinerary</a>
+    <section>
+        <div class="container grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem;">
+            <!-- Himachal -->
+            <div class="trip-card" style="height: 350px;">
+                <div class="card-img-wrapper" style="height: 100%;">
+                    <img src="images/manali.png" alt="Himachal">
+                    <div style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 2rem; background: linear-gradient(transparent, rgba(0,0,0,0.8)); color: white;">
+                        <h2 style="font-size: 1.8rem;">Himachal Pradesh</h2>
+                        <p style="font-size: 0.9rem; opacity: 0.9;">15+ Packages Available</p>
                     </div>
                 </div>
             </div>
-            
-            <!-- Travel Regions -->
-            <div class="section-padding" style="margin-top: 5rem;">
-                <div class="section-title reveal">
-                    <h2>Navigate by Region</h2>
+
+            <!-- Uttarakhand -->
+            <div class="trip-card" style="height: 350px;">
+                <div class="card-img-wrapper" style="height: 100%;">
+                    <img src="images/group.png" alt="Uttarakhand">
+                    <div style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 2rem; background: linear-gradient(transparent, rgba(0,0,0,0.8)); color: white;">
+                        <h2 style="font-size: 1.8rem;">Uttarakhand</h2>
+                        <p style="font-size: 0.9rem; opacity: 0.9;">10+ Packages Available</p>
+                    </div>
                 </div>
-                <div style="display: flex; gap: 2rem; flex-wrap: wrap; justify-content: center;">
-                    <div class="glass" style="padding: 2rem 4rem; text-align: center; flex: 1; min-width: 250px;">Mountain Treks</div>
-                    <div class="glass" style="padding: 2rem 4rem; text-align: center; flex: 1; min-width: 250px;">Coastal Holidays</div>
-                    <div class="glass" style="padding: 2rem 4rem; text-align: center; flex: 1; min-width: 250px;">Desert Safaris</div>
-                    <div class="glass" style="padding: 2rem 4rem; text-align: center; flex: 1; min-width: 250px;">International Tours</div>
+            </div>
+
+            <!-- Ladakh -->
+            <div class="trip-card" style="height: 350px;">
+                <div class="card-img-wrapper" style="height: 100%;">
+                    <img src="images/hero_bg.png" alt="Ladakh">
+                    <div style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 2rem; background: linear-gradient(transparent, rgba(0,0,0,0.8)); color: white;">
+                        <h2 style="font-size: 1.8rem;">Ladakh</h2>
+                        <p style="font-size: 0.9rem; opacity: 0.9;">Limited Summer Batches</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer style="padding: 4rem 0; background: var(--bg-darker); border-top: 1px solid var(--glass-border);">
-        <div class="container" style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 2rem;">
-            <div>
-                <a href="index.html" class="logo">DRIFT<span>&</span>DISCOVER</a>
-                <p style="color: var(--text-muted); margin-top: 1rem; max-width: 350px;">Your partner in premium adventures. Premium travel concierge from Delhi NCR.</p>
-            </div>
-            <div>
-                <h4 style="margin-bottom: 1.5rem;">Quick Navigation</h4>
-                <div style="display: flex; flex-direction: column; gap: 0.8rem;">
-                    <a href="index.html" style="color: var(--text-muted); text-decoration: none;">Home</a>
-                    <a href="group-trips.html" style="color: var(--text-muted); text-decoration: none;">Weekend Trips</a>
-                    <a href="contact.html" style="color: var(--text-muted); text-decoration: none;">Contact Us</a>
-                </div>
-            </div>
+    <footer>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Drift & Discover. All Rights Reserved.</p>
         </div>
-        <p style="text-align: center; margin-top: 4rem; color: var(--text-muted); font-size: 0.9rem;">&copy; 2026 Drift & Discover. Traveling the extra mile for you.</p>
     </footer>
 
-    <!-- Floating Actions -->
-    <div class="floating-actions">
-        <div class="float-btn fb-whatsapp" id="waBtn"><i class="fa-brands fa-whatsapp"></i></div>
-    </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
-    <script src="script.js"></script>
 </body>
 </html>

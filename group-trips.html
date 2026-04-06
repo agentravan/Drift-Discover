@@ -3,248 +3,202 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Upcoming Group Trips | Drift & Discover - Affordable Adventures from Delhi NCR</title>
+    <title>Upcoming Group Trips | Drift & Discover</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
 
-    <div id="preloader">
-        <div class="loader-logo logo">
-            <span class="drift">Drift</span><span class="amp">&</span><span class="discover">Discover</span>
+    <!-- Top Bar & Nav (Same as Index) -->
+    <div class="nav-top">
+        <div class="container flex justify-between items-center" style="font-size: 0.85rem; color: var(--text-muted);">
+            <div><i class="fa-solid fa-phone"></i> +91 86992 46801 | +91 91492 62139</div>
+            <div><i class="fa-solid fa-envelope"></i> drift.discover@zohomail.in</div>
         </div>
     </div>
 
-    <!-- Sticky Navbar -->
-    <nav id="navbar" class="scrolled">
-        <div class="container">
-            <a href="index.html" class="logo">
-                <span class="drift">Drift</span><span class="amp">&</span><span class="discover">Discover</span>
+    <nav>
+        <div class="container flex justify-between items-center nav-main">
+            <a href="index.html" class="logo flex items-center gap-2">
+                <img src="logo.png" alt="Drift & Discover Logo" class="logo-img">
             </a>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="group-trips.html" class="nav-active">Upcoming Trips</a></li>
-                <li><a href="about.html">Why Us</a></li>
+                <li><a href="group-trips.html" style="color: var(--primary); font-weight: 700;">Group Trips</a></li>
+                <li><a href="about.html">About Us</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a href="tel:+918699246801" class="btn btn-primary" style="padding: 0.6rem 1.2rem; font-size: 0.85rem;">Book Now</a></li>
             </ul>
+        </div>
+        <div class="category-bar">
+            <div class="container">
+                <ul class="category-links">
+                    <li><a href="group-trips.html?cat=upcoming">Upcoming Trips</a></li>
+                    <li><a href="group-trips.html?cat=himachal">Himachal Packages</a></li>
+                    <li><a href="group-trips.html?cat=uttarakhand">Uttarakhand Trips</a></li>
+                    <li><a href="group-trips.html?cat=weekend">Weekend Getaways</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-    <header class="page-header" style="background: linear-gradient(to bottom, var(--bg-dark), var(--bg-darker));">
+    <!-- Page Header -->
+    <section style="background: var(--bg-soft); padding: 40px 0; border-bottom: 1px solid var(--border-color);">
         <div class="container">
-            <h1 class="gradient-text reveal">Upcoming Group Trips</h1>
-            <p class="reveal">Fixed Weekend Departures from Delhi NCR | Starting at ₹6,999</p>
+            <h1 style="font-size: 2rem; color: var(--primary);">Upcoming Group Trips</h1>
+            <p style="color: var(--text-muted);">Explore our curated collection of group departures from Delhi NCR.</p>
         </div>
-    </header>
+    </section>
 
-    <section class="section-padding">
+    <!-- Filter Bar -->
+    <section style="padding: 20px 0; border-bottom: 1px solid var(--border-color);">
+        <div class="container flex items-center gap-4" style="flex-wrap: wrap;">
+            <div style="font-weight: 600;">Filter By:</div>
+            <select class="btn" style="border: 1px solid var(--border-color); background: white;">
+                <option>All Destinations</option>
+                <option>Himachal Pradesh</option>
+                <option>Uttarakhand</option>
+                <option>Rajasthan</option>
+            </select>
+            <select class="btn" style="border: 1px solid var(--border-color); background: white;">
+                <option>All Durations</option>
+                <option>2D/1N</option>
+                <option>3D/2N</option>
+                <option>4D/3N</option>
+            </select>
+            <select class="btn" style="border: 1px solid var(--border-color); background: white;">
+                <option>Sort By: Popularity</option>
+                <option>Price: Low to High</option>
+                <option>Price: High to Low</option>
+            </select>
+        </div>
+    </section>
+
+    <!-- Trip Grid -->
+    <section>
         <div class="container">
-            
-            <!-- Month Filter -->
-            <div class="month-filter reveal">
-                <div class="month-btn active">All Batches</div>
-                <div class="month-btn">April 2026</div>
-                <div class="month-btn">May 2026</div>
-                <div class="month-btn">June 2026</div>
-            </div>
-
-            <div class="dest-grid">
+            <div class="trip-grid">
                 <!-- Manali -->
-                <div class="dest-card reveal">
-                    <span class="card-badge badge-trending">Best Seller</span>
-                    <img src="images/manali.png" alt="Manali">
-                    <div class="dest-info">
-                        <div class="card-meta">
-                            <div class="meta-left">
-                                <span><i class="fa-solid fa-clock"></i> 3D/2N</span>
-                                <span><i class="fa-solid fa-location-dot"></i> Delhi</span>
-                            </div>
-                            <div class="meta-right">
-                                <span class="seats">Only 5 Seats Left!</span>
-                            </div>
+                <div class="trip-card">
+                    <div class="card-img-wrapper">
+                        <span class="card-badge">Best Seller</span>
+                        <img src="images/manali.png" alt="Manali">
+                        <div class="price-badge">₹6,999 onwards</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="trip-meta">
+                            <span><i class="fa-solid fa-clock"></i> 3D/2N</span>
+                            <span><i class="fa-solid fa-location-dot"></i> Delhi to Delhi</span>
                         </div>
-                        <span class="price">₹6,999</span>
-                        <h3>Manali - Magical Himachal</h3>
-                        
-                        <div class="card-dates">
-                            <div class="date-btn active">12 Apr (Weekend)</div>
-                            <div class="date-btn">19 Apr (Weekend)</div>
-                            <div class="date-btn">26 Apr (Weekend)</div>
-                        </div>
-
-                        <div style="display: flex; gap: 1rem;">
-                            <a href="trip-detail.html?trip=manali" class="btn btn-outline" style="flex: 1; text-align: center; padding: 0.8rem 1rem;">View Details</a>
-                            <a href="https://forms.gle/1miEZ4Qx2orwSfUx8" target="_blank" class="btn btn-primary" style="flex: 1; text-align: center; padding: 0.8rem 1rem;">Book Now</a>
+                        <h3 class="trip-title">Manali - Magical Himachal Group Trip</h3>
+                        <div class="flex justify-between items-center">
+                            <span style="color: var(--secondary); font-weight: 800; font-size: 0.8rem;">Every Friday Departure</span>
+                            <a href="trip-detail.html?trip=manali" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.8rem;">Trip Details</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Kasol -->
-                <div class="dest-card reveal">
-                    <span class="card-badge badge-selling">Fast Filling</span>
-                    <img src="images/group.png" alt="Kasol">
-                    <div class="dest-info">
-                        <div class="card-meta">
-                            <div class="meta-left">
-                                <span><i class="fa-solid fa-clock"></i> 3D/2N</span>
-                                <span><i class="fa-solid fa-location-dot"></i> Delhi</span>
-                            </div>
-                            <div class="meta-right">
-                                <span class="seats">Only 3 Seats Left!</span>
-                            </div>
+                <div class="trip-card">
+                    <div class="card-img-wrapper">
+                        <span class="card-badge">Fast Filling</span>
+                        <img src="images/group.png" alt="Kasol">
+                        <div class="price-badge">₹6,999 onwards</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="trip-meta">
+                            <span><i class="fa-solid fa-clock"></i> 3D/2N</span>
+                            <span><i class="fa-solid fa-location-dot"></i> Delhi to Delhi</span>
                         </div>
-                        <span class="price">₹6,999</span>
-                        <h3>Kasol - Parvati Valley Magic</h3>
-
-                        <div class="card-dates">
-                            <div class="date-btn active">12 Apr (Weekend)</div>
-                            <div class="date-btn">26 Apr (Weekend)</div>
-                        </div>
-
-                        <div style="display: flex; gap: 1rem;">
-                            <a href="trip-detail.html?trip=kasol" class="btn btn-outline" style="flex: 1; text-align: center; padding: 0.8rem 1rem;">View Details</a>
-                            <a href="https://forms.gle/1miEZ4Qx2orwSfUx8" target="_blank" class="btn btn-primary" style="flex: 1; text-align: center; padding: 0.8rem 1rem;">Book Now</a>
+                        <h3 class="trip-title">Kasol - Parvati Valley Magic</h3>
+                        <div class="flex justify-between items-center">
+                            <span style="color: var(--secondary); font-weight: 800; font-size: 0.8rem;">Weekend Batches</span>
+                            <a href="trip-detail.html?trip=kasol" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.8rem;">Trip Details</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Jibhi -->
-                <div class="dest-card reveal">
-                    <span class="card-badge badge-best">Trending</span>
-                    <img src="images/hero_bg.png" alt="Jibhi">
-                    <div class="dest-info">
-                        <div class="card-meta">
-                            <div class="meta-left">
-                                <span><i class="fa-solid fa-clock"></i> 3D/2N</span>
-                                <span><i class="fa-solid fa-location-dot"></i> Delhi</span>
-                            </div>
-                            <div class="meta-right">
-                                <span class="seats">Almost Full!</span>
-                            </div>
+                <div class="trip-card">
+                    <div class="card-img-wrapper">
+                        <span class="card-badge" style="background: var(--secondary); color: white;">Trending</span>
+                        <img src="images/hero_bg.png" alt="Jibhi">
+                        <div class="price-badge">₹6,999 onwards</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="trip-meta">
+                            <span><i class="fa-solid fa-clock"></i> 3D/2N</span>
+                            <span><i class="fa-solid fa-location-dot"></i> Delhi to Delhi</span>
                         </div>
-                        <span class="price">₹6,999</span>
-                        <h3>Jibhi - The Hidden Paradise</h3>
-
-                        <div class="card-dates">
-                            <div class="date-btn active">19 Apr (Weekend)</div>
-                            <div class="date-btn">03 May (Weekend)</div>
-                        </div>
-
-                        <div style="display: flex; gap: 1rem;">
-                            <a href="trip-detail.html?trip=jibhi" class="btn btn-outline" style="flex: 1; text-align: center; padding: 0.8rem 1rem;">View Details</a>
-                            <a href="https://forms.gle/1miEZ4Qx2orwSfUx8" target="_blank" class="btn btn-primary" style="flex: 1; text-align: center; padding: 0.8rem 1rem;">Book Now</a>
+                        <h3 class="trip-title">Jibhi - The Hidden Paradise</h3>
+                        <div class="flex justify-between items-center">
+                            <span style="color: var(--secondary); font-weight: 800; font-size: 0.8rem;">Limited Seats</span>
+                            <a href="trip-detail.html?trip=jibhi" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.8rem;">Trip Details</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Shimla -->
-                <div class="dest-card reveal">
-                    <span class="card-badge badge-selling">Selling Fast</span>
-                    <img src="images/thailand.png" alt="Shimla" style="filter: hue-rotate(90deg);">
-                    <div class="dest-info">
-                        <div class="card-meta">
-                            <div class="meta-left">
-                                <span><i class="fa-solid fa-clock"></i> 2D/1N</span>
-                                <span><i class="fa-solid fa-location-dot"></i> Delhi</span>
-                            </div>
-                            <div class="meta-right">
-                                <span class="seats">Only 7 Seats Left!</span>
-                            </div>
-                        </div>
-                        <span class="price">₹5,999</span>
-                        <h3>Shimla & Kufri Getaway</h3>
-
-                        <div class="card-dates">
-                            <div class="date-btn active">12 Apr (Weekend)</div>
-                            <div class="date-btn">26 Apr (Weekend)</div>
-                        </div>
-
-                        <div style="display: flex; gap: 1rem;">
-                            <a href="trip-detail.html?trip=shimla" class="btn btn-outline" style="flex: 1; text-align: center; padding: 0.8rem 1rem;">View Details</a>
-                            <a href="https://forms.gle/1miEZ4Qx2orwSfUx8" target="_blank" class="btn btn-primary" style="flex: 1; text-align: center; padding: 0.8rem 1rem;">Book Now</a>
-                        </div>
+                <!-- Add more dummy cards to fill the page like a real service -->
+                 <div class="trip-card">
+                    <div class="card-img-wrapper">
+                        <img src="images/hero_bg.png" alt="Spiti">
+                        <div class="price-badge">₹12,499 onwards</div>
                     </div>
-                </div>
-
-                <!-- Dharamshala -->
-                <div class="dest-card reveal">
-                    <img src="images/bali.png" alt="Mcleodganj" style="filter: brightness(0.7) sepia(0.3);">
-                    <div class="dest-info">
-                        <div class="card-meta">
-                            <div class="meta-left">
-                                <span><i class="fa-solid fa-clock"></i> 3D/2N</span>
-                                <span><i class="fa-solid fa-location-dot"></i> Delhi</span>
-                            </div>
-                            <div class="meta-right">
-                                <span class="seats">Selling Fast!</span>
-                            </div>
+                    <div class="card-content">
+                        <div class="trip-meta">
+                            <span><i class="fa-solid fa-clock"></i> 6D/5N</span>
+                            <span><i class="fa-solid fa-location-dot"></i> Delhi to Delhi</span>
                         </div>
-                        <span class="price">₹6,999</span>
-                        <h3>Dharamshala & Mcleodganj</h3>
-
-                        <div class="card-dates">
-                            <div class="date-btn active">19 Apr (Weekend)</div>
-                            <div class="date-btn">10 May (Weekend)</div>
-                        </div>
-
-                        <div style="display: flex; gap: 1rem;">
-                            <a href="trip-detail.html?trip=mcleodganj" class="btn btn-outline" style="flex: 1; text-align: center; padding: 0.8rem 1rem;">View Details</a>
-                            <a href="https://forms.gle/1miEZ4Qx2orwSfUx8" target="_blank" class="btn btn-primary" style="flex: 1; text-align: center; padding: 0.8rem 1rem;">Book Now</a>
+                        <h3 class="trip-title">Spiti Valley Expedition - Summer Special</h3>
+                        <div class="flex justify-between items-center">
+                            <span style="color: var(--secondary); font-weight: 800; font-size: 0.8rem;">Monthly Batches</span>
+                            <a href="#" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.8rem;">Trip Details</a>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!-- Fixed Pricing Section -->
-            <div class="section-padding" style="margin-top: 5rem;">
-                <div class="trips-container">
-                    <div class="trips-text reveal-left">
-                        <h2 class="gradient-text">Our Fixed Weekend Batches</h2>
-                        <ul class="glass" style="padding: 2rem;">
-                            <li><i class="fa-solid fa-calendar-check"></i> Every 2nd & 4th Saturday Departure</li>
-                            <li><i class="fa-solid fa-clock"></i> Friday Evening (8:00 PM) Pickup</li>
-                            <li><i class="fa-solid fa-rotate-left"></i> Sunday Evening Departure back to Delhi</li>
-                            <li><i class="fa-solid fa-wallet"></i> Fixed Pricing: ₹6,999 All-Inclusive</li>
-                        </ul>
-                    </div>
-
-                    <div class="calculator-wrapper glass reveal-right">
-                        <h3 style="text-align: center; margin-bottom: 2rem;">Quick Price Calculator</h3>
-                        <input type="number" id="travelerCount" class="calc-input" placeholder="Number of Travelers" min="1" value="1">
-                        <div class="calc-result">
-                            <h4>Standard Batch Price: ₹6,999</h4>
-                            <span class="total-price" id="totalPrice">₹6,999</span>
-                        </div>
-                        <p style="text-align: center; color: var(--text-muted); margin-top: 2rem; font-size: 0.9rem;">
-                            <i class="fa-solid fa-shield-halved"></i> 40% advance at booking | UPI/Razorpay Accepted
-                        </p>
-                        <a href="https://forms.gle/1miEZ4Qx2orwSfUx8" target="_blank" class="btn btn-primary" style="width: 100%; text-align: center; margin-top: 1.5rem;">Proceed to Booking</a>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer style="padding: 4rem 0; background: var(--bg-darker); border-top: 1px solid var(--glass-border);">
-        <div class="container" style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 2rem;">
+    <!-- Footer (Same as Index) -->
+    <footer>
+        <div class="container footer-grid">
             <div>
-                <a href="index.html" class="logo">
-                   <span class="drift">Drift</span><span class="amp">&</span><span class="discover">Discover</span>
-                </a>
-                <p style="color: var(--text-muted); margin-top: 1rem; max-width: 300px;">Weekend Trips • Delhi NCR Focused • High-Quality Adventures.</p>
+                <img src="drift_and_discover_logo_1775490254916.png" alt="Logo" style="height: 50px; margin-bottom: 1.5rem;">
+                <p style="color: var(--text-muted);">Making group travel easy, affordable, and premium for everyone starting from Delhi NCR.</p>
             </div>
             <div>
-                <h4 style="margin-bottom: 1.5rem;">Contact Support</h4>
-                <p style="color: var(--text-muted);">Email: drift.discover@zohomail.in</p>
+                <h4 class="footer-title">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="group-trips.html">Upcoming Trips</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
             </div>
+            <div>
+                <h4 class="footer-title">Trip Categories</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Himachal Specials</a></li>
+                    <li><a href="#">Uttarakhand Gems</a></li>
+                    <li><a href="#">Rajasthan Royal</a></li>
+                    <li><a href="#">International Tours</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-title">Contact Us</h4>
+                <ul class="footer-links" style="color: var(--text-muted);">
+                    <li><i class="fa-solid fa-phone" style="margin-right: 10px; color: var(--primary);"></i> +91 86992 46801</li>
+                    <li><i class="fa-solid fa-phone" style="margin-right: 10px; color: var(--primary);"></i> +91 91492 62139</li>
+                    <li><i class="fa-solid fa-envelope" style="margin-right: 10px; color: var(--primary);"></i> drift.discover@zohomail.in</li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Drift & Discover. All Rights Reserved.</p>
         </div>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

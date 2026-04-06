@@ -13,6 +13,8 @@
     --glass-border: rgba(255, 255, 255, 0.1);
     --glass-heavy: rgba(15, 23, 42, 0.95);
     --transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    --warning: #f59e0b;
+    --success: #10b981;
 }
 
 /* --- Preloader --- */
@@ -349,6 +351,44 @@ nav .container {
     font-weight: 700;
     margin-bottom: 1rem;
     display: block;
+    font-size: 1.2rem;
+}
+
+/* Card Badges */
+.card-badge {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    z-index: 10;
+    letter-spacing: 1px;
+}
+
+.badge-trending { background: var(--accent); color: white; }
+.badge-selling { background: var(--warning); color: white; }
+.badge-best { background: var(--primary); color: white; }
+
+/* Card Meta Icons */
+.card-meta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.card-meta span {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.card-meta i {
+    color: var(--primary);
 }
 
 /* --- Fixed Trips Section --- */
@@ -620,14 +660,64 @@ nav .container {
     .form-container { padding: 2rem; }
 }
 
-/* Page Header for sub-pages */
-.page-header {
-    padding: 150px 0 80px;
-    background: linear-gradient(to bottom, var(--bg-dark), var(--bg-darker));
-    text-align: center;
+/* Month Filter */
+.month-filter {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    padding: 1rem 0;
+    margin-bottom: 3rem;
+    scrollbar-width: none;
 }
 
-.page-header h1 {
-    font-size: 4rem;
+.month-filter::-webkit-scrollbar { display: none; }
+
+.month-btn {
+    padding: 0.6rem 1.5rem;
+    border: 1px solid var(--glass-border);
+    border-radius: 50px;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: var(--transition);
+    color: var(--text-muted);
+}
+
+.month-btn.active, .month-btn:hover {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+}
+
+/* FAQ Section */
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
     margin-bottom: 1rem;
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.faq-question {
+    padding: 1.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.faq-answer {
+    padding-bottom: 1.5rem;
+    color: var(--text-muted);
+    display: none;
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+.faq-item.active i {
+    transform: rotate(180deg);
 }

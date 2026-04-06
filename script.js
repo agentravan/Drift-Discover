@@ -160,7 +160,38 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 45000);
     }
 
-    /* --- Form Submission Handler --- */
+    /* --- Countdown Timer --- */
+    const countdownElement = document.getElementById('countdown');
+    if (countdownElement) {
+        // Set target date (every 2nd & 4th Friday departure)
+        // Hardcoded for demo: Next Friday
+        const targetDate = new Date();
+        targetDate.setDate(targetDate.getDate() + (targetDate.getDay() < 5 ? 5 - targetDate.getDay() : 12 - targetDate.getDay()));
+        targetDate.setHours(20, 0, 0, 0);
+
+        setInterval(() => {
+            const now = new Date();
+            const diff = targetDate - now;
+
+            const d = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const h = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const s = Math.floor((diff % (1000 * 60)) / 1000);
+
+            countdownElement.textContent = `${d}d ${h.toString().padStart(2, '0')}h ${m.toString().padStart(2, '0')}m ${s.toString().padStart(2, '0')}s`;
+        }, 1000);
+    }
+
+    /* --- Date Button Interactivity --- */
+    document.querySelectorAll('.date-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const container = btn.parentElement;
+            container.querySelectorAll('.date-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+        });
+    });
+
+    /* --- Form Submission (Razorpay Mock) --- */
     const leadForm = document.getElementById('leadForm');
     if (leadForm) {
         leadForm.addEventListener('submit', (e) => {
@@ -168,20 +199,23 @@ document.addEventListener('DOMContentLoaded', () => {
             const firstBtn = leadForm.querySelector('button[type="submit"]');
             const originalText = firstBtn.innerHTML;
             
-            firstBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Processing...';
+            firstBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Processing Payment...';
             firstBtn.disabled = true;
 
             setTimeout(() => {
-                firstBtn.innerHTML = '<i class="fa-solid fa-check"></i> Quote Received!';
+                // Mock Razorpay / UPI Success
+                firstBtn.innerHTML = '<i class="fa-solid fa-check"></i> Registration Success!';
                 firstBtn.style.background = '#10b981';
-                alert('Thank you! Your quote request has been received.');
+                
+                alert('Drift & Discover: Booking confirmed via UPI/Razorpay! You will receive full trip details 4 days before departure.');
+                
                 setTimeout(() => {
                     firstBtn.innerHTML = originalText;
                     firstBtn.style.background = 'var(--primary)';
                     firstBtn.disabled = false;
                     leadForm.reset();
                 }, 3000);
-            }, 1500);
+            }, 2000);
         });
     }
 

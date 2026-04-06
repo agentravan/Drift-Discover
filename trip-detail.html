@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Details | Drift & Discover - Affordable Adventures</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+
+    <div id="preloader">
+        <div class="loader-logo logo">
+            <span class="drift">Drift</span><span class="amp">&</span><span class="discover">Discover</span>
+        </div>
+    </div>
+
+    <!-- Sticky Navbar -->
+    <nav id="navbar" class="scrolled">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="drift">Drift</span><span class="amp">&</span><span class="discover">Discover</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="group-trips.html">Upcoming Trips</a></li>
+                <li><a href="about.html">Why Us</a></li>
+                <li><a href="contact.html" class="nav-active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Trip Hero -->
+    <header class="page-header" style="height: 60vh; display: flex; align-items: flex-end; padding-bottom: 4rem; background: linear-gradient(transparent, var(--bg-darkers)), url('images/manali.png') no-repeat center center/cover;">
+        <div class="container" style="width: 100%;">
+            <span class="card-badge badge-best" style="position: static; display: inline-block; margin-bottom: 1rem;">Weekend Special</span>
+            <h1 class="gradient-text reveal" id="tripTitle" style="font-size: 3.5rem; margin-bottom: 0.5rem;">Manali - Magical Himachal</h1>
+            <p class="reveal" style="font-size: 1.2rem;"><i class="fa-solid fa-clock"></i> 3D/2N • <i class="fa-solid fa-indian-rupee-sign"></i> ₹6,999/-</p>
+        </div>
+    </header>
+
+    <section class="section-padding">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 4rem;">
+                
+                <!-- Left Content -->
+                <div>
+                    <!-- Itinerary -->
+                    <div class="section-title" style="text-align: left; margin-bottom: 2rem;">
+                        <h2>Detailed Itinerary</h2>
+                    </div>
+                    
+                    <div class="faq-container" style="margin: 0; max-width: 100%;">
+                        <div class="faq-item active">
+                            <div class="faq-question">Day 0: Departure From Delhi <i class="fa-solid fa-chevron-down"></i></div>
+                            <div class="faq-answer">
+                                <p>Report at Kashmiri Gate Metro Station at 7:00 PM. Meet your trip captain and fellow travelers. Depart from Delhi via AC Volvo / Traveler around 8:00 PM.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">Day 1: Arrival & Local Sightseeing <i class="fa-solid fa-chevron-down"></i></div>
+                            <div class="faq-answer">
+                                <p>Arrival in Manali by morning. Check-in to your hotel/camps. After some rest, head out for local sightseeing: Hadimba Temple, Mall Road, and Old Manali Cafe crawl. Dinner & Overnight stay.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">Day 2: Solang Valley & Adventure <i class="fa-solid fa-chevron-down"></i></div>
+                            <div class="faq-answer">
+                                <p>A full day dedicated to adventure. Head to Solang Valley for paragliding, zorbing, and beautiful mountain views. Evening bonfire with musical night back at the stay. Dinner included.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Inclusions / Exclusions -->
+                    <div style="margin-top: 4rem; display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                        <div class="glass" style="padding: 2rem; border-left: 4px solid var(--success);">
+                            <h4 style="margin-bottom: 1.5rem;"><i class="fa-solid fa-circle-check" style="color: var(--success);"></i> Inclusions</h4>
+                            <ul style="list-style: none; font-size: 0.9rem; color: var(--text-muted); display: grid; gap: 0.8rem;">
+                                <li>✔ Delhi to Manali AC Travel</li>
+                                <li>✔ 2 Night Stay in Deluxe Hotel</li>
+                                <li>✔ 2 Breakfasts + 2 Dinners</li>
+                                <li>✔ Local Sightseeings</li>
+                                <li>✔ Experienced Trip Captain</li>
+                                <li>✔ Bonfire Night</li>
+                            </ul>
+                        </div>
+                        <div class="glass" style="padding: 2rem; border-left: 4px solid var(--accent);">
+                            <h4 style="margin-bottom: 1.5rem;"><i class="fa-solid fa-circle-xmark" style="color: var(--accent);"></i> Exclusions</h4>
+                            <ul style="list-style: none; font-size: 0.9rem; color: var(--text-muted); display: grid; gap: 0.8rem;">
+                                <li>✖ Lunch on all days</li>
+                                <li>✖ Adventure activity costs</li>
+                                <li>✖ Personal expenses</li>
+                                <li>✖ Anything not in inclusions</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Pickup Points -->
+                    <div style="margin-top: 4rem;">
+                        <h3><i class="fa-solid fa-map-location-dot"></i> Pickup Points</h3>
+                        <div style="display: flex; gap: 1rem; margin-top: 1.5rem;">
+                            <div class="glass" style="padding: 1rem 2rem; flex: 1; text-align: center;">Kashmiri Gate</div>
+                            <div class="glass" style="padding: 1rem 2rem; flex: 1; text-align: center;">Majnu Ka Tilla</div>
+                            <div class="glass" style="padding: 1rem 2rem; flex: 1; text-align: center;">Noida Sec 15</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Sidebar (Sticky Booking) -->
+                <div>
+                    <div class="glass" style="position: sticky; top: 120px; padding: 2.5rem; text-align: center;">
+                        <span class="seats" style="display: block; margin-bottom: 1rem; color: var(--warning); font-weight: 700;">🔥 Only 4 seats remaining!</span>
+                        <h4 style="margin-bottom: 0.5rem;">Choose Batch Date</h4>
+                        <div class="card-dates" style="justify-content: center; margin-bottom: 2rem;">
+                            <div class="date-btn active">12 Apr</div>
+                            <div class="date-btn">19 Apr</div>
+                        </div>
+                        
+                        <div id="priceBox" style="margin-bottom: 2rem;">
+                            <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">Price per person</p>
+                            <h2 class="gradient-text" style="font-size: 3rem;">₹6,999</h2>
+                        </div>
+
+                        <a href="https://forms.gle/1miEZ4Qx2orwSfUx8" target="_blank" class="btn btn-primary" style="width: 100%; margin-bottom: 1rem;">Book This Trip</a>
+                        <a href="https://wa.me/918699246801?text=Hi, I want to book the Manali trip on 12th April" target="_blank" class="btn btn-outline" style="width: 100%;"><i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp</a>
+                        
+                        <p style="margin-top: 2rem; font-size: 0.8rem; color: var(--text-muted);"><i class="fa-solid fa-lock"></i> Secure Payment via Razorpay / UPI</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="padding: 4rem 0; background: var(--bg-darker); border-top: 1px solid var(--glass-border);">
+        <div class="container" style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 2rem;">
+            <div>
+                 <span class="drift" style="font-family: 'Dancing Script', cursive; font-size: 2rem; color: var(--primary);">Drift</span><span class="amp" style="color: var(--accent); font-size: 1.5rem;">&</span><span class="discover" style="font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 1.8rem; color: white;">Discover</span>
+                <p style="color: var(--text-muted); margin-top: 1rem;">Weekend Trips • Delhi NCR Focused • High-Quality Adventures.</p>
+            </div>
+            <div>
+                <p style="color: var(--text-muted);">Email: drift.discover@zohomail.in</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Simple Itinerary Toggle
+        document.querySelectorAll('.faq-question').forEach(q => {
+            q.addEventListener('click', () => {
+                q.parentElement.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>

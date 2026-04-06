@@ -1,17 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 :root {
     --primary: #6366f1;
     --primary-glow: rgba(99, 102, 241, 0.5);
     --secondary: #a855f7;
-    --accent: #f43f5e;
+    --accent: #ff7e5f;
     --bg-dark: #0f172a;
-    --bg-darker: #020617;
+    --bg-darker: #0b1d3a;
     --text-light: #f8fafc;
     --text-muted: #94a3b8;
-    --glass: rgba(255, 255, 255, 0.03);
+    --glass: rgba(15, 23, 42, 0.4);
     --glass-border: rgba(255, 255, 255, 0.1);
-    --glass-heavy: rgba(15, 23, 42, 0.95);
+    --glass-heavy: rgba(11, 29, 58, 0.95);
     --transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
     --warning: #f59e0b;
     --success: #10b981;
@@ -137,8 +137,20 @@ nav .container {
     letter-spacing: -1px;
 }
 
-.logo span {
+.logo .drift {
+    font-family: 'Dancing Script', cursive;
     color: var(--primary);
+    font-size: 2.2rem;
+    margin-right: -5px;
+}
+
+.logo .amp {
+    color: var(--accent);
+}
+
+.logo .discover {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
 }
 
 .nav-links {
@@ -375,20 +387,53 @@ nav .container {
 /* Card Meta Icons */
 .card-meta {
     display: flex;
-    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 1rem;
+}
+
+.meta-left {
+    display: flex;
+    gap: 0.8rem;
     font-size: 0.85rem;
     color: var(--text-muted);
 }
 
-.card-meta span {
+.meta-left span {
     display: flex;
     align-items: center;
     gap: 0.4rem;
 }
 
-.card-meta i {
-    color: var(--primary);
+.meta-right .seats {
+    color: var(--warning);
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+
+/* Card Dates Selection */
+.card-dates {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+}
+
+.date-btn {
+    padding: 0.4rem 0.8rem;
+    border: 1px solid var(--glass-border);
+    border-radius: 5px;
+    font-size: 0.75rem;
+    white-space: nowrap;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.date-btn.active {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: white;
 }
 
 /* --- Fixed Trips Section --- */

@@ -64,16 +64,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (travelerCountInput) {
         travelerCountInput.addEventListener('input', () => {
-            const count = parseInt(travelerCountInput.value) || 0;
+            const count = Math.max(0, parseInt(travelerCountInput.value) || 0);
             const total = count * fixedPrice;
             
             // GSAP Number Counter Animation
             if (typeof gsap !== 'undefined') {
-                gsap.to(totalPriceDisplay, {
-                    duration: 0.5,
-                    innerHTML: "₹" + total.toLocaleString(),
-                    snap: { innerHTML: 1 },
-                    ease: "power1.out"
+                const dummyObj = { value: parseFloat(totalPriceDisplay.textContent.replace(/[₹,]/g, '')) || 0 };
+                gsap.to(dummyObj, {
+                    duration: 0.8,
+                    value: total,
+                    ease: "power2.out",
+                    onUpdate: () => {
+                        totalPriceDisplay.textContent = "₹" + Math.round(dummyObj.value).toLocaleString();
+                    }
                 });
             } else {
                 totalPriceDisplay.textContent = `₹${total.toLocaleString()}`;
